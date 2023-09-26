@@ -2,8 +2,7 @@
 <html>
 <body>
 
-<h1>Hello World!</h1>
-<p>Welcome to my first Django project!</p>
+<h1>Number App</h1>
 
 <form action = "" method = "POST">
     {% csrf_token %}
@@ -11,7 +10,7 @@
     <input type="submit" value="Submit">
 </form>
 
-<h2>Numbers</h2>
+<h2>10 Most Recent Numbers:</h2>
 <ul>
     {% for x in mynumbers %}
       <li>{{ x.number }}</li>
