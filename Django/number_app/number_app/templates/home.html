@@ -5,5 +5,12 @@
 <h1>Hello World!</h1>
 <p>Welcome to my first Django project!</p>
 
+<h2>Numbers</h2>
+<ul>
+    {% for x in mynumbers %}
+      <li>{{ x.number }}</li>
+    {% endfor %}
+  </ul>
+
 </body>
 </html>
