@@ -12,7 +12,6 @@ def renderPage(request):
     context['form']= NumberForm()
 
     if request.method == 'POST':
-        print(type(request.POST.get('number')))
         number = NumberInput(number = request.POST.get('number'))
         number.save()
     return HttpResponse(template.render(context, request))
