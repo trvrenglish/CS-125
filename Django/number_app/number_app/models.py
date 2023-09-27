@@ -2,7 +2,7 @@ from django.db import models
 from django import forms
 
 class NumberInput(models.Model):
-    number = models.CharField(max_length=255)
+    number = models.IntegerField()
 
 class NumberForm(forms.ModelForm):
     # specify the name of model to use

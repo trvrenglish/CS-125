@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html>
+<head>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
 <body>
 
+<div class="container">
 <h1>Number App</h1>
 
 <form action = "" method = "POST">
     {% csrf_token %}
     {{ form }}
-    <input type="submit" value="Submit">
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
 </form>
-
-<h2>10 Most Recent Numbers:</h2>
+<h2>10 Most Recent Numbers</h2>
 <ul>
     {% for x in mynumbers %}
       <li>{{ x.number }}</li>
     {% endfor %}
   </ul>
-
+</div>
 </body>
 </html>
+
+<style>
+    h1 {
+        margin-top: 20px;
+    }
+
+
+    h2 {
+        margin-top: 20px;
+    }
+
+</style>
