@@ -22,6 +22,7 @@ CREATE TABLE degree (
 );
 
 CREATE TABLE rank (
+  faculty_id integer,
   instructor boolean,
   professor boolean,
   associate_professor boolean,
