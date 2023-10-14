@@ -5,7 +5,7 @@ import os
 
 
 with open("degrees.txt", "w") as output_file:
-    output_file.write("INSERT INTO faculty VALUES\n")
+    output_file.write("INSERT INTO degree VALUES\n")
 
     start_date = datetime.date(1950, 10, 1)
     end_date = datetime.date(2022, 11, 30)

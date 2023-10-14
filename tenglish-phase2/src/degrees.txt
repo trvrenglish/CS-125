@@ -1,4 +1,4 @@
-INSERT INTO faculty VALUES
+INSERT INTO degree VALUES
 (1, "Graphic Design", "Master's Degree", "1981"),
 (2, "Underwater Basketweaving", "Ph.D", "1976"),
 (3, "Kineseology", "Ph.D", "1994"),
