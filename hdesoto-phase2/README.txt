@@ -20,10 +20,16 @@ to reflect the intended use of our databases.
 
 4) populatelarge.sql
 For this file, we created various Python programs to generate the data at random and store in the populatelarge.sql file. 
+Within our src file,
 We created various for loops in this file to generate a hundred, a thousand, and ten thousand random pieces of data, based on the assigned table. 
 We imported the library Faker which will allow us to use random names so we don't have to hand type them all. 
-We created a function gen_phone() which generates random phone numbers that will be part of the data set we will insert into our database. 
+We created a function gen_phone() which generates random phone numbers that will be part of the data set we will insert into our database.
+Trevor English worked primarily on developing the python programs.  
 
+The degreetensthousand file opens the degrees.txt file and uses a for loop to write values into it. 
+The facultytensthousands file opens the faculty.txt file and uses a for loop to write values into it. 
+The rankHundreds file uses a for loop to put data into the rank table. 
+The universityHundreds file uses a for loop to put data into the university table. 
 
 
 
