@@ -16,7 +16,7 @@ CREATE TABLE faculty (
 
 CREATE TABLE degree (
   degree_id integer,
-  name varchar(30),
+  degree_name varchar(30),
   degree_type varchar(30),
   year_grad integer
 );
