@@ -34,3 +34,15 @@ CREATE TABLE university (
   highest_level varchar(40),
   christian_affiliation boolean
 );
+
+CREATE TABLE rank (
+  assistant_professor boolean,
+  associate_professor boolean,
+  instructor boolean,
+  professor boolean,
+);
+
+CREATE TABLE community_service (
+  hours varchar(40),
+  community_service varchar(40),
+);
