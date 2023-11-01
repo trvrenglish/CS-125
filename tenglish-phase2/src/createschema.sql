@@ -4,14 +4,15 @@ CREATE TABLE person (
   lname varchar(30),
   email varchar(40),
   phone varchar(13),
-  gender varhar(10)
+  gender varchar(10)
 );
 
 CREATE TABLE faculty (
   faculty_id integer,
   tenured boolean,
   term_begin date,
-  term_end date
+  term_end date,
+  signed_statement_faith boolean
 );
 
 CREATE TABLE degree (
@@ -37,6 +38,20 @@ CREATE TABLE university (
 );
 
 CREATE TABLE community_service (
-  hours varchar(40),
-  community_service varchar(40),
+  community_service_id integer,
+  hrs varchar(40),
+  title varchar(40),
+  descript varchar(40),
+  organization varchar(40),
 );
+
+CREATE TABLE research (
+  research_id integer,
+  number_of_publications varchar(30),
+  funding_source varchar(40),
+  title varchar(40),
+  collaborators varchar(100),
+  descript varchar(300),
+
+  
+)
