@@ -1,8 +1,8 @@
 -- Index on email column in the person table:
-CREATE INDEX idx_person_email ON person (email);
+CREATE INDEX ndx_person_email ON person (email);
 
 -- Index on faculty_id column in the degree table:
-CREATE INDEX idx_degree_faculty_id ON degree (faculty_id);
+CREATE INDEX ndx_degree_faculty_id ON degree (faculty_id);
 
 
 -- Query without the indexes
