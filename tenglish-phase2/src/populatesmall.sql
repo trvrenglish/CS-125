@@ -66,3 +66,15 @@ INSERT INTO university VALUES
 INSERT INTO research VALUES
     (1, 1, "3", "self-funded", "example research", "John Rodkey, Mike Ryu", "example description")
 ;
+
+INSERT INTO community_service VALUES
+    (1, 1, "123", "example title 1", "example description", "nonprofit incorporated"),
+    (2, 1, "35", "example title 2", "example description", "nonprofit incorporated"),
+    (3, 1, "90", "example title 3", "example description", "nonprofit incorporated")
+;
+
+INSERT INTO degree VALUES
+    (1, 1, "Computer Science", "Bachelors", "2024"),
+    (2, 2, "English", "Masters", "2021"),
+    (3, 3, "Religious Studies", "Bachelors", "2022")
+;
