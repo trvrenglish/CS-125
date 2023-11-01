@@ -31,6 +31,19 @@ The facultytensthousands file opens the faculty.txt file and uses a for loop to 
 The rankHundreds file uses a for loop to put data into the rank table. 
 The universityHundreds file uses a for loop to put data into the university table. 
 
+5) a.sql
+Develop five questions that you think should be answered by your database. Write five corresponding queries for your database, using the select-from-where construct of SQL to answer those questions based on the data in your database
+
+6) b.sql
+Write five data modification commands on your database.
+
+7) c.sql
+Create two views on top of your database schema. Again, these views should be meaningful with respect to the purpose for which you are building your database. Your file, c.sql, should contain your CREATE VIEW statements.
+
+8) d.sql
+Create at least two useful indexes for your database (other than indexes SQL creates automatically because of key or unique declarations). Consider the types of queries that you expect will be run and in that light where an index could be beneficial. 
+
+
 
 
 
