@@ -14,7 +14,8 @@ CREATE TABLE faculty (
   term_begin date,
   term_end date,
   signed_statement_faith boolean,
-  FOREIGN KEY (person_id) REFERENCES person(id)
+  FOREIGN KEY (person_id) REFERENCES person(id),
+  ON DELETE CASCADE
 );
 
 CREATE TABLE degree (
