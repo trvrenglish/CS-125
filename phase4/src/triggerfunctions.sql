@@ -28,7 +28,7 @@ DECLARE
     faculty_count INT := 0;
     average_publications DECIMAL;
 BEGIN
-    -- CALCULATE teh total number of publications and count of faculty members 
+    -- CALCULATE the total number of publications and count of faculty members 
     FOR faculty_record IN
         SELECT number_of_publications
         FROM research
