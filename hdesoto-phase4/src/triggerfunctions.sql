@@ -69,3 +69,9 @@ BEGIN
   RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
+
+-- Trigger to check age before inserting into the person table
+CREATE TRIGGER check_person_age_trigger
+  BEFORE INSERT OR UPDATE ON person
+  FOR EACH ROW
+  EXECUTE FUNCTION check_person_age();
