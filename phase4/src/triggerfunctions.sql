@@ -57,3 +57,15 @@ BEGIN
     END IF;
 END;
 $$ LANGUAGE plpgsql;
+
+
+-- Stored function to check if a person's age is greater than or equal to 25
+CREATE OR REPLACE FUNCTION check_person_age()
+  RETURNS TRIGGER AS $$
+BEGIN
+  IF NEW.age < 25 THEN
+    RAISE EXCEPTION 'Age must be 25 or older';
+  END IF;
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
